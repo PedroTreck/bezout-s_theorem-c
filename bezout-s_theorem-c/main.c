@@ -24,6 +24,7 @@ int main() {
 
 		printf("\n\tNew dates? - \n\t[1-YES] | [2-NO]\n\t\t");
 		scanf("%d", &op);
+
 		op == 1 ? system("cls") : exit(0);
 	}
 
