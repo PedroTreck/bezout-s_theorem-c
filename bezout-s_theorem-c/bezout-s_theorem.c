@@ -35,12 +35,10 @@ void read_bezout(Bezout* bezout, int x, int y, int r) {
 void calculate_bezout(Bezout* bezout) {
 
 	while (_MOD(bezout->x, bezout->y) != 0) {
-
 		_SWAP_R(bezout->x, bezout->y, int);
 		bezout->q = (int)bezout->x / bezout->y;
 		_SWAP_D(bezout->_x[0], bezout->_x[1], bezout->q, int);
 		_SWAP_D(bezout->_y[0], bezout->_y[1], bezout->q, int);
-
 	}
 
 	_TEST_D(bezout->r, bezout->y);
@@ -50,6 +48,7 @@ void calculate_bezout(Bezout* bezout) {
 
 void error() {
 	printf("/nError - There are no solutions");
+	main();
 }
 
 void results_bezout(Bezout* bezout) {
