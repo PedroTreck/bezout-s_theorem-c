@@ -40,7 +40,6 @@ void calculate_bezout(Bezout* bezout) {
 		_SWAP_D(bezout->_x[0], bezout->_x[1], bezout->q, int);
 		_SWAP_D(bezout->_y[0], bezout->_y[1], bezout->q, int);
 	}
-
 	_TEST_D(bezout->r, bezout->y);
 	bezout->_x[0] *= bezout->r;
 	bezout->_y[0] *= bezout->r;
